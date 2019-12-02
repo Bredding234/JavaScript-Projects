@@ -1,0 +1,140 @@
+<html>
+<head>
+<title>Activity 15</title>
+<style type="text/css">
+    table, tr, td
+    {
+   	 background-color: #ddeeff;
+   	 border: solid 1px black;
+    }
+
+    td
+    {
+   	 padding: 3px;
+    }
+
+</style>
+<SCRIPT>
+ function deliveryHome()
+{
+
+	if(document.forms[0].option2.checked)
+	{
+		document.forms[0].option3.checked = false;
+		//document.forms[0].priority.checked = false;
+	}
+}
+
+function deliveryWork()
+{
+	if(document.forms[0].option3.checked)
+	{
+		document.forms[0].option2.checked = false;
+		//document.forms[0].priority.checked = false;
+	}
+}
+function myFunction(changeSize) {
+    document.getElementById("changesize").value = changeSize.target.value
+}
+ 
+
+function Calculate(theForm)
+{
+ var testvalues = new Array(theForm.option2.value, theForm.option3.value);
+ //first color condition and when user choose either option
+	if(theForm.color[0].checked == true)
+    {   
+		if(theForm.option2.checked == true){
+   	 document.write("<table style='background-color: #ddeeff; border: solid 1px black;'><tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Name: </td><td style='border: solid 1px black;'>" + theForm.fullname.value +  "</td></tr>" + "<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Member ID: </td><td style='border: solid 1px black;'>" + theForm.ID.value + "</td></tr>" + "<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Color: </td><td style='border: solid 1px black;'>" + "White" + "</td></tr>" + "<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Size: </td><td style='border: solid 1px black;'>" + theForm.size.value + "</td></tr>" + "<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Delivery Option: </td><td style='border: solid 1px black;'>" + testvalues[0] + "</td></tr>" +  "</td></tr></table>" + "Have a Nice Day!");    
+    }
+}
+	if(theForm.color[0].checked == true)
+    {   
+		if(theForm.option3.checked == true){
+   	 document.write("<table style='background-color: #ddeeff; border: solid 1px black;'><tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Name: </td><td style='border: solid 1px black;'>" + theForm.fullname.value +  "</td></tr>" + "<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Member ID: </td><td style='border: solid 1px black;'>" + theForm.ID.value + "</td></tr>" + "<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Color: </td><td style='border: solid 1px black;'>" + "White" + "</td></tr>" + "<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Size: </td><td style='border: solid 1px black;'>" + theForm.size.value + "</td></tr>" + "<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Delivery Option: </td><td style='border: solid 1px black;'>" + testvalues[1] + "</td></tr>" +  "</td></tr></table>" + "Have a Nice Day!");    
+    }
+}
+// 2nd color condition and when users choose one of the two options 
+    if(theForm.color[1].checked == true)
+    {   
+	if(theForm.option2.checked == true){
+   	 document.write("<table style='background-color: #ddeeff; border: solid 1px black;'><tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Name: </td><td style='border: solid 1px black;'>" + theForm.fullname.value +  "</td></tr>" + "<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Member ID: </td><td style='border: solid 1px black;'>" + theForm.ID.value + "</td></tr>" + "<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Color: </td><td style='border: solid 1px black;'>" + "Silver" + "</td></tr>" + "<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Size: </td><td style='border: solid 1px black;'>" + theForm.size.value + "</td></tr>" + "<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Delivery Option: </td><td style='border: solid 1px black;'>" + testvalues[0] + "</td></tr>" +  "</td></tr></table>" + "Have a Nice Day!");    
+    }
+}
+
+if(theForm.color[1].checked == true)
+    {   
+	if(theForm.option3.checked == true){
+   	 document.write("<table style='background-color: #ddeeff; border: solid 1px black;'><tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Name: </td><td style='border: solid 1px black;'>" + theForm.fullname.value +  "</td></tr>" + "<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Member ID: </td><td style='border: solid 1px black;'>" + theForm.ID.value + "</td></tr>" + "<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Color: </td><td style='border: solid 1px black;'>" + "Silver" + "</td></tr>" + "<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Size: </td><td style='border: solid 1px black;'>" + theForm.size.value + "</td></tr>" + "<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Delivery Option: </td><td style='border: solid 1px black;'>" + testvalues[1] + "</td></tr>" +  "</td></tr></table>" + "Have a Nice Day!");    
+    }
+}
+// 3rd color condition and when users choose one of the two options 
+
+    if(theForm.color[2].checked == true)
+    {   
+		if(theForm.option2.checked == true){
+   	 document.write("<table style='background-color: #ddeeff; border: solid 1px black;'><tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Name: </td><td style='border: solid 1px black;'>" + theForm.fullname.value +  "</td></tr>" + "<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Member ID: </td><td style='border: solid 1px black;'>" + theForm.ID.value + "</td></tr>" + "<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Color: </td><td style='border: solid 1px black;'>" + "Red" + "</td></tr>" + "<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Size: </td><td style='border: solid 1px black;'>" + theForm.size.value + "</td></tr>" + "<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Delivery Option: </td><td style='border: solid 1px black;'>" + testvalues[0] + "</td></tr>" +  "</td></tr></table>" + "Have a Nice Day!");    
+    }
+}
+	 if(theForm.color[2].checked == true)
+    {   
+		if(theForm.option3.checked == true){
+   	 document.write("<table style='background-color: #ddeeff; border: solid 1px black;'><tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Name: </td><td style='border: solid 1px black;'>" + theForm.fullname.value +  "</td></tr>" + "<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Member ID: </td><td style='border: solid 1px black;'>" + theForm.ID.value + "</td></tr>" + "<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Color: </td><td style='border: solid 1px black;'>" + "Red" + "</td></tr>" + "<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Size: </td><td style='border: solid 1px black;'>" + theForm.size.value + "</td></tr>" + "<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Delivery Option: </td><td style='border: solid 1px black;'>" + testvalues[1] + "</td></tr>" +  "</td></tr></table>" + "Have a Nice Day!");    
+    }
+	}
+	
+// 4th color condition and when users choose one of the two options 
+
+	if(theForm.color[3].checked == true)
+    {   
+			if(theForm.option2.checked == true){
+   	 document.write("<table style='background-color: #ddeeff; border: solid 1px black;'><tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Name: </td><td style='border: solid 1px black;'>" + theForm.fullname.value +  "</td></tr>" + "<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Member ID: </td><td style='border: solid 1px black;'>" + theForm.ID.value + "</td></tr>" + "<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Color: </td><td style='border: solid 1px black;'>" + "Blue" + "</td></tr>" + "<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Size: </td><td style='border: solid 1px black;'>" + theForm.size.value + "</td></tr>" + "<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Delivery Option: </td><td style='border: solid 1px black;'>" + testvalues[0] + "</td></tr>" +  "</td></tr></table>" + "Have a Nice Day!");    
+    }
+	}
+	if(theForm.color[3].checked == true)
+    {   
+			if(theForm.option3.checked == true){
+   	 document.write("<table style='background-color: #ddeeff; border: solid 1px black;'><tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Name: </td><td style='border: solid 1px black;'>" + theForm.fullname.value +  "</td></tr>" + "<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Member ID: </td><td style='border: solid 1px black;'>" + theForm.ID.value + "</td></tr>" + "<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Color: </td><td style='border: solid 1px black;'>" + "Blue" + "</td></tr>" + "<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Size: </td><td style='border: solid 1px black;'>" + theForm.size.value + "</td></tr>" + "<tr style='border: solid 1px black;'><td style='border: solid 1px black;'>Delivery Option: </td><td style='border: solid 1px black;'>" + testvalues[1] + "</td></tr>" +  "</td></tr></table>" + "Have a Nice Day!");    
+    }
+	}
+    
+}
+
+</SCRIPT>
+</head>
+<body>
+<form name = "theForm">
+<table>
+<tr><td>Full Name: </td><td><input type="text" name="fullname"></td></tr>
+<tr><td>Member ID: </td><td><input type="text" name="ID"></td></tr>
+<tr>
+<td>
+<img src = "tShirt.jpg">
+</td>
+<td>
+<select Name = "sizes" onchange = "myFunction(event)">
+<option disabled selected value="">-Select Size-</option>
+  <option value="Small">Small</option>
+  <option value="Medium">Medium</option>
+  <option value="Large">Large</option>
+  <option value="X-Large">X-Large</option>
+	<option value="XX-Large">XX-Large</option>
+    	<option value="XXX-Large">XXX-Large</option>
+</select>
+</td>
+</tr>
+<tr><td>You Choose: </td><td><input type="text" id = "changesize" name="size"> size</td></tr>
+
+<tr><td>Color: </td><td><input type="radio" name="color">White <br><input type="radio" name="color">Silver <br><input type="radio" name="color">Red <br><input type="radio" name="color">Blue</td></tr>
+
+<tr><td>Delivery Option </td><td><input type="checkbox" id = "home1" name="option2"  value= "Home" onClick="deliveryHome()">Delivery to Home <br/><input type="checkbox" name="option3" id = "work1" value="Work" onClick="deliveryWork()">Delivery to Work</td></tr>
+
+
+</table>
+<!--<button onClick="Calculate(this.form);checkBoxDisplay()">Report it!</button>-->
+<button onClick="Calculate(this.form)">Confirm Your Order!</button>
+<button onClick="reset()">Reset</button>
+
+</form>
+</body>
+</html>
