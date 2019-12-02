@@ -1,0 +1,84 @@
+<html>
+<head>
+<title>Activity 13</title>
+<style>
+
+</style>
+<SCRIPT LANGUAGE = "JAVASCRIPT">
+var imageOne = new Image();
+imageOne.src = "./Images/index3.jpg";
+//var timer = 0;
+//var myInterval = -1;
+
+function change()
+{
+
+    document.images[0].src = "./Images/index2.jpg";
+   	 imageOne = setTimeout(change2, 2000);
+	 
+    }
+setTimeout(change, 2000);
+
+function change2(){
+   	 document.images[0].src = "./Images/index3.jpg";
+   	 setTimeout(change3, 2000);
+}
+
+function change3(){
+   	 document.images[0].src = "./Images/index4.jpg";
+}
+
+function setTimer(){
+// this pauses the slideshow.
+    clearTimeout(imageOne);
+   	 
+}
+function startSlide()
+{
+// this resumes the slide show.
+	imageOne = setTimeout(change, 500);
+}
+
+function backToFirstImage(){
+	   	 document.images[0].src = "./Images/index.jpg";
+}
+
+
+function restartSlides(){
+   	 document.images[0].src = "./Images/index4.jpg";
+	imageOne = setTimeout(backToFirstImage, 2000);
+}
+
+
+</SCRIPT>
+</head>
+<body>
+<h1>The NBA players of the Lakers.</h1>
+
+<div class = "slideshow-container">
+<div class = "mySlides fade">
+ <div class="numbertext"></div>
+<img class = "pictures" src="Images/index.jpg">
+ 
+</div>
+
+
+
+
+<button onClick = "setTimer()"> STOP</button>
+<button onClick = "startSlide()"> RESUME </button>
+<button onClick = "restartSlides()"> RESTART </button>
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
